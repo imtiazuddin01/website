@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+    body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: monospace;
+}
+img{
+    width:90%;
+    height: 200px;
+}
+.main{
+    box-sizing: border-box;
+    margin: 0;
+}
+.column{
+    float: left;
+    width:23.333%;
+    height: 50%;
+    background: coral;
+    box-sizing: border-box;
+    margin:5%;
+    padding: 30px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color:wheat;
+}
+.column h1{
+    color: black;
+    text-align: center;
+    opacity: .5;
+}
+.column:hover{
+    background-color: rgba(114, 177, 236, 0.918);
+}
+ @media screen and (max-width: 576;){
+     body{
+         color: khaki;
+     }
+    .column{
+      float: none;
+      width:90%;
+      height: 50%;
+      background: coral;
+      box-sizing: border-box;
+      margin:5%;
+      padding: 30px;
+      line-height: 150%;
+      text-transform: capitalize;
+      color:wheat;
+    }
+    .column h1{
+      color: black;
+      text-align: center;
+      opacity: .5;
+    }
+    .column:hover{
+      background-color: rgba(114, 177, 236, 0.918);
+    }
+ }
+    </style>
+
+    <title>example</title>
+</head>
+<body>
+    <center><h1>Our Products</h1></center>
+    <div class="main">
+     <div class="column">
+        <h1>CAT</h1>
+        <img src="./photos/cat.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+     </div>
+     <div class="column"> 
+        <h1>DOG</h1>
+       <img src="./photos/dog.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column">
+        <h1>EXPRESS</h1> 
+       <img src="./photos/express.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column"> 
+        <h1>LION</h1>       
+        <img src="./photos/lion.jpg"   alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column">
+        <h1>MAN</h1>
+        <img src="./photos/man.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column">
+        <h1>PAPER</h1>       
+       <img src="./photos/paper.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+    </div>
+</body>
+</html>

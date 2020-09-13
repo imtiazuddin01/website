@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <style>
+    body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 10px 0;   
+    font-size:1rem;
+    background: black;
+}
+.nav h1{
+    color: darkgrey;
+}
+.nav ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: whitesmoke;
+}
+.nav ul li{
+   transition: all 0.3s ease-in;
+}
+.nav ul li:hover{
+    background: darkgreen;
+    padding:15px;
+}
+img{
+    width:90%;
+    height: 200px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+.column{
+    width:30%;
+    text-align: center;
+    background: orangered;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.25% 0;
+}
+.column h1{
+    color: black;
+    text-align: center;
+    opacity: .5;
+}
+.column:hover{
+    background-color: rgba(114, 177, 236, 0.918);
+}
+footer{
+    background:rgb(37, 31, 31);
+    padding: 20px;
+}
+footer .foot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 5% 0;
+}
+footer .foot ul{
+    display:flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 1rem;
+}
+footer .foot ul li{
+    transition: all 0.2s linear;
+}
+footer .foot ul li:hover{
+    padding: 20px;
+    color:wheat;
+    background: dodgerblue;
+}
+footer p{
+    text-align: center;
+    font: bolder;
+    color:white;
+}
+@media (max-width:600px){
+    body{
+        background: black;
+        color: darkgray;
+    }
+    .column{
+        width:90%;
+        margin: 2.5% 0;
+        color:black;
+        padding: 2.5%;
+    }
+    .nav{
+       flex-direction: column;
+    }
+    .nav ul{
+       width: 100%;
+       color: black;
+       justify-content: space-evenly;
+       background: floralwhite;
+       padding: 10px 0;
+    }
+    
+    footer .foot ul{
+       width: 100%;
+       font-size: 0.8rem;
+    }
+
+
+}
+    </style>
+
+    <title>example</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>aesthetic store</h1>
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>work for us</li>           
+        </ul>
+    </div>
+    <center><h1>Our Products</h1></center>
+    <div class="main">
+     <div class="column">
+        <h1>CAT</h1>
+        <img src="/cat.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+     </div>
+     <div class="column"> 
+        <h1>DOG</h1>
+       <img src="/dog.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column">
+        <h1>EXPRESS</h1> 
+       <img src="/express.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column"> 
+        <h1>LION</h1>       
+        <img src="/lion.jpg"   alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column">
+        <h1>MAN</h1>
+        <img src="/man.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+     <div class="column">
+        <h1>PAPER</h1>       
+       <img src="/paper.jpg"  alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque praesentium repellendus ipsa nemo magni, officia ad, dolorem earum facilis iusto necessitatibus rem quibusdam dolores a sunt voluptatum, error nobis ullam placeat perspiciatis delectus alias temporibus nihil iste! Id atque quae repudiandae,</p>
+
+     </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>work for us</li>
+                <li>affiliate</li>
+             </ul>                
+        </div>
+        <p>copyright 2020 aesthetic.com | all rights reserved.</p>
+    </footer>
+</body>
+</html>

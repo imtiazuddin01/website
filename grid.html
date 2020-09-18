@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid.html</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
+        }
+        button{
+            box-sizing: border-box;
+            width:100px;
+            background-color: dodgerblue;
+            padding:15px;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: capitalize;
+            outline: none;
+            color: floralwhite;
+        }
+        button:hover{
+             background-color: darkred;
+        }
+        button:nth-child(1){
+           margin-right: 10px;
+        }
+        .container-box{
+            width: 1200px;
+            height: auto;
+            margin:0 auto;
+            box-sizing:border-box ;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .container-box .model-box{
+            position: relative;
+            background: #fff;
+            padding:20px 40px 40px;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .container-box .model-box:nth-child(1){
+            background: linear-gradient(45deg, #036eb7,#64eaff);
+        }
+        .container-box .model-box:nth-child(2){
+            background: linear-gradient(45deg, #E91E63,#ed55ff);
+        } 
+        .container-box .model-box:nth-child(3){
+            background: linear-gradient(45deg, #086d35,#00ff72);
+        }
+        .container-box .model-box:nth-child(4){
+            background: linear-gradient(45deg, #f05a4f,#f4c030);
+        }
+        .container-box .model-box h1{
+            position: relative;
+            margin: 0;
+            padding:0;
+            font-size: 100px;
+            color:#fff;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        .container-box .model-box h3{
+            margin: 0;
+            padding:0;
+            font-size: 24px;
+            color:#fff;
+            text-transform: uppercase;
+        }
+        .container-box .model-box p{
+            margin: 0;
+            padding:0;
+            font-size: 18px;
+            color:#fff;
+        }
+
+    </style>
+
+    <script>
+        function changeStyle(){
+            var page = document.getElementById("body").style.backgroundColor="black";
+        }
+
+        function normalStyle(){
+            var color=document.getElementById("body").style.backgroundColor="white";
+        }
+    </script>
+</head>
+<body id="body">
+    
+
+    <button onclick="changeStyle()">dark-mode</button>
+    <button onclick="normalStyle()">light-mode</button>
+    
+
+     
+    <div class="container-box">
+        <div class="model-box">
+            <h1>1</h1>
+            <h3>model one</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error, laboriosam repellendus cum fugit, fugiat nesciunt rerum omnis itaque eveniet nihil accusamus quasi explicabo atque blanditiis provident sapiente, alias unde?</p>
+        </div>
+        <div class="model-box">
+            <h1>2</h1>
+            <h3>model two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error, laboriosam repellendus cum fugit, fugiat nesciunt rerum omnis itaque eveniet nihil accusamus quasi explicabo atque blanditiis provident sapiente, alias unde?</p>
+
+        </div>
+        <div class="model-box">           
+            <h1>3</h1>
+            <h3>model three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error, laboriosam repellendus cum fugit, fugiat nesciunt rerum omnis itaque eveniet nihil accusamus quasi explicabo atque blanditiis provident sapiente, alias unde?</p>
+
+        </div>
+        <div class="model-box">          
+            <h1>4</h1>
+            <h3>model four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error, laboriosam repellendus cum fugit, fugiat nesciunt rerum omnis itaque eveniet nihil accusamus quasi explicabo atque blanditiis provident sapiente, alias unde?</p>
+
+        </div>
+    </div>
+      
+</body>
+</html>

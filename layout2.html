@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/21a78c09f0.js" crossorigin="anonymous">
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+
+
+
+    <title>Layout2.html</title>
+</head>
+<body>
+    <div class="nav">
+
+        <div class="logo">
+
+        </div>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>work</li>
+                <li>services</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav> 
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>welcome to the official website of - imtiaz uddin</h1>
+        </div>
+        <div class="intro">
+            <p>if you are looking for a person who can do web design and web development at the same time than you are at the right place </p><br><br>
+            <button>hire</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="work">
+            <h3> work 1 </h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ex. Eos porro pariatur vero minima architecto sit dolor non, consequatur voluptates delectus unde cumque. Delectus quidem illo ratione maiores voluptate.</p>
+        </div>
+        <div class="work">
+            <h3>work2</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non debitis soluta repudiandae beatae voluptatum, tempore fuga quam dignissimos molestiae cumque perspiciatis vel facilis quae ducimus corporis nam dolore dicta!</p>
+        </div>
+        <div class="work">
+            <h3>work 3</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum dolor quisquam harum totam exercitationem molestias, facere reprehenderit quis dolorem nulla sint optio, officiis expedita quam. Eos debitis veritatis eligendi?</p>
+        </div>
+    </div>
+    <div class="footer">
+         <h2> about</h2><br>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis rerum asperiores nemo, dignissimos sint atque.</p>
+
+         <p>copyright 2020 imtiazuddin.com || all rights reserved.</p>
+    </div>
+
+
+    <style>
+
+       body{
+           box-sizing: border-box;
+           text-transform: capitalize;
+           font-family: 'Montserrat', sans-serif;
+           background: #1B262C;
+       }
+       *{
+           margin:0;
+           padding: 0;
+           box-sizing: border-box;
+           list-style: none;
+       }
+       .nav{
+           display: flex;
+           align-items: center;
+           justify-content: space-evenly;
+           box-sizing: border-box;
+           color:#E2F4FF;
+           font-size:20px;
+       }
+       .nav .logo{
+           width: 10%;
+           height:120px;
+           background-color:#E2F4FF;
+           border-radius: 50%;
+           border:solid 3px white;
+           margin:20px auto;
+           box-sizing: border-box;
+       }
+        
+       .nav nav{
+           display: flex ;
+           justify-content: space-around;
+           align-items: center;
+           width:70%
+       }
+       .nav nav ul{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+       }
+       .nav nav ul li{
+           padding: 20px 30px;
+           transition: all .3s ease-in;
+       }
+       .nav nav ul li:hover{
+           background: darkgrey;
+           border-radius: 15px;
+           color:black;
+       }
+        .nav .menu-toggle{
+           color:#fff;
+           float:right;
+           cursor: pointer;
+           font-size:24px;
+           display: none;
+       }
+       .container{
+           display:flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .container .header{
+        box-sizing: border-box;
+        background: #3282B8;
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+       }
+       .container .intro{
+           width: 100%;
+           padding: 50px 0;
+           text-align: center;
+           font-size: 21px;
+           background: whitesmoke;
+           color:#1B262C;
+       }
+       .main{
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           box-sizing: border-box;
+           background-color: #BBE1FA;
+           padding: 3% 0;
+       }
+       .main .work{
+           width: 25%;
+           box-sizing: border-box;
+           padding: 30px 40px ;
+           font-size: 20px;
+           background: #1B262C;
+           color: #BBE1FA;
+           text-align: center;
+       }
+       .main .work:hover{
+           background: whitesmoke;
+           color:#1B262C;
+       }
+       .footer{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           padding: 3% 3% 0 3%;
+           font-size: 22px;
+           
+       }
+       .footer p:first-child{
+           width:40%
+       }
+       .footer p:last-child{
+           width:100%;
+           padding-top:30px;
+           color: whitesmoke;
+           text-align:center ;
+           font-size:15px;
+       }
+       .container .intro button{
+           width:100px;
+           height: 40px;
+           font-size: 20px;
+           text-transform: uppercase;
+           background: red;
+           border:none;
+           color:whitesmoke;
+           transition: all .3s ease-in;
+       }
+       .container .intro button:hover{
+           background: #BBE1FA;
+           color:#1B262C;
+           border-radius: 10px;
+       }
+
+/* MEDIA QUERIES||||| */
+
+      @media (max-width:600px){
+          .nav nav{
+              position: absolute;
+              width:100%;
+              height: 100%;
+              top:160px;
+              left:-100%;
+              transition: .5s;
+              background: #1B262C;
+          }
+          .nav nav.active{
+              left: 0;
+          }
+          .nav nav ul{
+              display: block;
+              text-align: center;
+          }
+          .nav nav ul li{
+              border-bottom: solid 2px black;
+              width: 100%;
+          }
+          .nav nav ul li:hover{
+              background:none;
+              border-radius:0;
+          }
+          .nav .logo{
+              width:30%;
+              margin-left: 3%;
+          }
+          .nav .menu-toggle{
+              display: block;
+              padding-right: 30px;
+          }
+          .container .header{
+              font-size: 16px;
+          }
+          .container .intro{
+              padding-left: 3%;
+              padding-right: 3%;
+          }
+          .main{
+              flex-direction: column;
+              padding-top:6%
+          }
+          .main .work{
+              width: 90%;
+              margin-bottom: 3%;
+          }
+          .main .work h3{
+              font-size:50px;
+          }
+          .main .work p{
+              line-height: 150%;
+          }
+          .footer{
+               text-align: center;
+               padding:6% 6% 0 6%;
+          }
+
+      }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu-toggle").click(function(){
+                $("nav").toggleClass("active")
+            })
+        })
+    </script>
+
+</body>
+</html>
